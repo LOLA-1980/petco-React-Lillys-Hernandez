@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -10,19 +11,22 @@ const NavBar = () => {
                             <div className="collapse navbar-collapse d-flex justify-content-between align-items-center align-content-center" id="navbarNav">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a className="nav-link active fw-semibold" href="/mascotas">Mascotas</a>
+                                        <NavLink className="nav-link fw-semibold" activeclassname="page" to={"/category/perro"}>Perro</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link active fw-semibold" href="/marcas">Marcas</a>
+                                        <NavLink className="nav-link fw-semibold" activeclassname="page" to={"/category/gato"}>Gato</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link active fw-semibold" href="/petgallery">PetGallety</a>
+                                        <NavLink className="nav-link fw-semibold" activeclassname="page" to={"/category/roedores"}>Roedores</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link active fw-semibold" href="/farmacia">Farmacia</a>
+                                        <NavLink className="nav-link fw-semibold" activeclassname="page" to={"/category/reptiles"}>Reptiles</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link active fw-semibold" href="/outlet">Outlet</a>
+                                        <NavLink className="nav-link fw-semibold" activeclassname="page" to={"/category/peces"}>Peces</NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link fw-semibold" activeclassname="page" to={"/category/aves"}>Aves</NavLink>
                                     </li>
                                 </ul>
                                 <div className="d-flex flex-row align-items-center align-content-center">
